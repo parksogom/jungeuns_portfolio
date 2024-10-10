@@ -2424,9 +2424,6 @@ html.no-csstransitions .home-content__main {
   }
   .about-stats {
     padding-top: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
   .stats__col {
     margin: 0;
@@ -2466,11 +2463,12 @@ html.no-csstransitions .home-content__main {
   .stats h5 {
     font-size: 1.3rem;
   }
-}
-
-@media (max-width: 768px) {
   .about-stats {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .s-about {
+    padding-bottom: 5rem;
   }
 }
 
