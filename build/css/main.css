@@ -2405,6 +2405,7 @@ html.no-csstransitions .home-content__main {
   }
   .stats h5 {
     margin-top: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -2423,6 +2424,9 @@ html.no-csstransitions .home-content__main {
   }
   .about-stats {
     padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
   .stats__col {
     margin: 0;
@@ -2458,6 +2462,15 @@ html.no-csstransitions .home-content__main {
   }
   .stats__count {
     font-size: 7.8rem;
+  }
+  .stats h5 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-stats {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -3498,7 +3511,6 @@ footer {
   font-size: 15px;
   line-height: 2;
   text-align: center;
-  color: rgba(136, 101, 101, 0.3);
 }
 
 footer h4 {
